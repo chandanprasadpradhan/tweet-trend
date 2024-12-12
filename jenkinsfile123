@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Clone-code') {
             steps {
-                git branch: 'main', credentialsId: 'maven-server-cred', url: 'https://github.com/chandanprasadpradhan/tweet-trend.git'
+                git branch: 'main', url: 'https://github.com/chandanprasadpradhan/tweet-trend.git'
             }
         }
     }
